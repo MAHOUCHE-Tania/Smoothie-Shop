@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+body{
+	font-size: Ubuntu;
+}
+/* Hero */
+#hero {
+	font-family:Pattaya ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 50px;
+	height: calc( 100vh - var( --navbar-height ) );
+	background: url("../images/hero.jpg");
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 3px var( --border-color );
+}
+
+#hero h1 {
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#hero a {
+	font-size: 1.3em;
+	color: inherit;
+}
+
+/* Main */
+#main {
+	display: grid;
+	box-sizing: border-box;
+	background-size: 25px;
+	font-family: Ubuntu;
+	align-items: center;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+img {max-width: 50%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+	margin:auto;
+}
+img:hover {
+	transform:scale(1.2);
+}
+h1 a{
+	text-decoration: none;
+	color: black;
+}
+
+#container-récapitulatif{
+	font-family:Pattaya ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top:10px;
+}
+		
+
+.affichage-prix-html{
+	font-family:Pattaya ;
+	font-size: 20px;
+	display: flex;
+	padding-top:50px;
+	padding-bottom:50px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+#formulaire{
+	font-family:Pattaya ;
+	display: flex;
+	flex-direction: column;
+	background:rgb(146, 216, 158);
+	position:absolute;
+	bottom:0;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:50px;
+	height:50px;
+	align-items: center;
+	text-align: center;
+}
+
+.btn-supprimer,#envoyerFormulaire{
+	font-family:Pattaya ;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 5px; 
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/* font-size: 16px;
+	margin: 4px 2px; */
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	}
+
+.btn-supprimer:hover {
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#envoyerFormulaire:hover {
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	margin-bottom: 50px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#button:hover {
+	background-color: #3e8e41;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+
+}
+
+/* PC */
+@media screen and ( min-width: 601px ) {
+	#main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

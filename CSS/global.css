@@ -1,0 +1,30 @@
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+
+/* Variables */
+:root {
+	--navbar-height: 80px;
+	--navbar-padding: 10px;
+	--border-color: #0003;
+	--footer-padding: 10px;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 10px;
+	}
+}
+
+/* PC */
+@media screen and ( min-width: 601px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 40px;
+	}
+}

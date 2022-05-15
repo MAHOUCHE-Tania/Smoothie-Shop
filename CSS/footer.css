@@ -1,0 +1,25 @@
+/* Sans media */
+body > footer {
+	display: grid;
+	padding: 30px ;
+	background-color: rgba(161, 231, 188, 0.945);
+	font-family: Pattaya;
+	text-decoration: none;
+}
+
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+
+	body > footer  {
+		text-align: center;
+	}
+}
+
+/* PC */
+@media screen and ( min-width: 601px ) {
+	body > footer {
+		grid-template-columns: 50% 50%;
+		align-items: center;
+	}
+}
